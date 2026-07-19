@@ -1,9 +1,5 @@
 # Core Coding and LLM Engineering Exercises
 
-שָׁרְט
-
-A curated set of python coding challenges designed to prepare developers for AI-native Software Engineering and LLM Engineering roles.
-
 This repository is split into two sections:
 1. **Core Coding**: Classic data structure and algorithm (DSA) questions commonly tested in technical screens.
 2. **LLM Coding**: Production-grade engineering challenges focused on working with large language models, streaming, tokenization, embeddings, vector databases, rate limits, concurrency, and validation.
@@ -37,19 +33,6 @@ Practical, self-contained AI-native backend challenges implemented in pure Pytho
 *   [09_exponential_backoff.py](llm_coding/09_exponential_backoff.py) — **Exponential Backoff Decorator**: Automatic retries with randomized jitter.
 *   [10_parallel_llm_calls.py](llm_coding/10_parallel_llm_calls.py) — **Concurrent LLM Batch Processor**: Thread pool execution with safety limits.
 *   [11_json_schema_validation.py](llm_coding/11_json_schema_validation.py) — **LLM JSON Schema Validator**: Validates structured output, auto-casts types.
-
----
-
-## How to Use This Repository
-
-Every file contains a completed, clean solution inside the main function, as well as a series of built-in tests at the bottom.
-
-1. **Verify Solutions**: You can run any file directly using Python to see if the tests pass:
-   ```bash
-   python3 core_coding/01_arrays_and_hashmaps.py
-   python3 llm_coding/01_token_counting.py
-   ```
-2. **Practice/Mock Interviews**: If you or a candidate wants to use these for practice, simply delete/comment out the bodies of the implementation functions (leaving the `pass` or `raise NotImplementedError`) and attempt to implement the solution such that all tests pass.
 
 ---
 
