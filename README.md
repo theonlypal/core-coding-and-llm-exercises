@@ -1,10 +1,11 @@
 # Core Coding and LLM Engineering Exercises
 
-This repository is split into four sections:
+This repository is split into five sections:
 1. **Core Coding**: Classic data structure and algorithm (DSA) questions commonly tested in technical screens.
 2. **LLM Coding**: Production-grade engineering challenges focused on working with large language models, streaming, tokenization, embeddings, vector databases, rate limits, concurrency, and validation.
 3. **AI Engineering**: End-to-end practical pipelines for key AI systems, including RAG pipelines, chatbots, agents, OCR extraction, and local code assistants.
 4. **Advanced AI Engineering**: High-level production AI patterns, including Paged Attention KV Caching, Hybrid Search (BM25 + Vector RRF), Multi-Agent DAGs, Guardrails/PII Redaction, Reflexion self-correction loops, and Speculative Decoding acceleration.
+5. **AI System Architecture**: Systems-level AI engineering components, including Guided Decoding Logit Masking, GraphRAG, Auto Tool Schema Generators, MemGPT Tiered Memory, OpenTelemetry Tracing, Semantic Chunking, Context Compression, Streaming JSON Parsers, Load Balancing/Failover, and Prompt Security Shields.
 
 ---
 
@@ -56,6 +57,19 @@ Advanced production AI architecture and performance optimizations:
 *   [08_llm_evaluator_metrics.py](advanced_ai_engineering/08_llm_evaluator_metrics.py) — **LLM Evaluator Metrics**: ROUGE-1 / ROUGE-L n-gram overlap algorithms and LLM-as-a-Judge Faithfulness scoring.
 *   [09_self_correction_reflexion.py](advanced_ai_engineering/09_self_correction_reflexion.py) — **Reflexion Self-Correction**: Isolated execution environment, exception capture, and iterative code healing loop.
 *   [10_speculative_decoding.py](advanced_ai_engineering/10_speculative_decoding.py) — **Speculative Decoding**: Draft model candidate token verification and generation speedup calculation.
+
+### 5. AI System Architecture (`system_architecture/`)
+Systems-level AI components and production safeguards:
+*   [01_guided_decoding_masker.py](system_architecture/01_guided_decoding_masker.py) — **Guided Decoding Masker**: FSM logit masking setting invalid token logits to `-inf` to guarantee valid syntax.
+*   [02_graph_rag_triples.py](system_architecture/02_graph_rag_triples.py) — **GraphRAG Triples**: Subject-predicate-object extraction, Knowledge Graph construction, and multi-hop neighborhood retrieval.
+*   [03_tool_schema_generator.py](system_architecture/03_tool_schema_generator.py) — **Auto Tool Schema Generator**: Function signature reflection auto-generating OpenAI/Anthropic tool JSON schemas.
+*   [04_tiered_agent_memory.py](system_architecture/04_tiered_agent_memory.py) — **Tiered Agent Memory**: MemGPT-style Working, Episodic, and Archived memory management.
+*   [05_llm_tracer_telemetry.py](system_architecture/05_llm_tracer_telemetry.py) — **LLM Tracer Telemetry**: OpenTelemetry-style span tree tracing, latency timing, and token counting.
+*   [06_semantic_chunker.py](system_architecture/06_semantic_chunker.py) — **Semantic Chunker**: Splitting text at high sentence embedding distance boundaries.
+*   [07_context_compression.py](system_architecture/07_context_compression.py) — **Context Compression**: Stop-word filtering and relevance-based sentence extraction fitting within token limits.
+*   [08_streaming_json_parser.py](system_architecture/08_streaming_json_parser.py) — **Streaming Partial JSON Parser**: Auto-completing unclosed quotes, brackets, and braces on partial token streams.
+*   [09_model_fallback_load_balancer.py](system_architecture/09_model_fallback_load_balancer.py) — **Model Load Balancer & Fallback**: Round-robin provider balancing and automated priority chain failover.
+*   [10_prompt_security_shield.py](system_architecture/10_prompt_security_shield.py) — **Prompt Security Shield**: Escaping XML tags in user inputs and enforcing structural boundary rules.
 
 ---
 
