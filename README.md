@@ -1,9 +1,10 @@
 # Core Coding and LLM Engineering Exercises
 
-This repository is split into three sections:
+This repository is split into four sections:
 1. **Core Coding**: Classic data structure and algorithm (DSA) questions commonly tested in technical screens.
 2. **LLM Coding**: Production-grade engineering challenges focused on working with large language models, streaming, tokenization, embeddings, vector databases, rate limits, concurrency, and validation.
 3. **AI Engineering**: End-to-end practical pipelines for key AI systems, including RAG pipelines, chatbots, agents, OCR extraction, and local code assistants.
+4. **Advanced AI Engineering**: High-level production AI patterns, including Paged Attention KV Caching, Hybrid Search (BM25 + Vector RRF), Multi-Agent DAGs, Guardrails/PII Redaction, Reflexion self-correction loops, and Speculative Decoding acceleration.
 
 ---
 
@@ -42,6 +43,19 @@ Complete pipeline implementations for production AI services:
 *   [03_agent.py](ai_engineering/03_agent.py) — **Autonomous ReAct Agent**: Reasoning loop orchestrator utilizing thought-action-observation cycles and tool execution.
 *   [04_ocr_pipeline.py](ai_engineering/04_ocr_pipeline.py) — **Scanned Document Extraction**: OCR character error cleanup, regex parsing for dates/invoices/amounts, and validation cleanups.
 *   [05_coding_assistant.py](ai_engineering/05_coding_assistant.py) — **Local Codebase Assistant**: Repository file and function index mapping, code symbol keyword querying, and automated code block injection.
+
+### 4. Advanced AI Engineering (`advanced_ai_engineering/`)
+Advanced production AI architecture and performance optimizations:
+*   [01_kv_cache_simulator.py](advanced_ai_engineering/01_kv_cache_simulator.py) — **KV Cache Simulator**: Block memory allocation for Paged Attention and memory savings calculation.
+*   [02_semantic_router.py](advanced_ai_engineering/02_semantic_router.py) — **Semantic Router**: Exemplar embedding distance calculation and dynamic intent route dispatching.
+*   [03_hybrid_search_rrf.py](advanced_ai_engineering/03_hybrid_search_rrf.py) — **Hybrid Search RRF**: BM25 keyword matching + Cosine vector search combined using Reciprocal Rank Fusion ($RRF\_Score = \sum \frac{1}{k + rank}$).
+*   [04_multi_agent_dag.py](advanced_ai_engineering/04_multi_agent_dag.py) — **Multi-Agent DAG**: Directed Acyclic Graph topology sorting and state orchestration.
+*   [05_guardrails_pii_redactor.py](advanced_ai_engineering/05_guardrails_pii_redactor.py) — **Guardrails & PII Redactor**: Pattern redaction (emails, SSNs, phone numbers) and prompt injection defense.
+*   [06_long_context_summarizer.py](advanced_ai_engineering/06_long_context_summarizer.py) — **Long-Context Summarizer**: Parallel Map-Reduce and sequential Refine summarization algorithms.
+*   [07_fine_tuning_dataset_generator.py](advanced_ai_engineering/07_fine_tuning_dataset_generator.py) — **Fine-Tuning Dataset Generator**: Instruction-Input-Output schema validation, similarity deduplication, and JSONL export.
+*   [08_llm_evaluator_metrics.py](advanced_ai_engineering/08_llm_evaluator_metrics.py) — **LLM Evaluator Metrics**: ROUGE-1 / ROUGE-L n-gram overlap algorithms and LLM-as-a-Judge Faithfulness scoring.
+*   [09_self_correction_reflexion.py](advanced_ai_engineering/09_self_correction_reflexion.py) — **Reflexion Self-Correction**: Isolated execution environment, exception capture, and iterative code healing loop.
+*   [10_speculative_decoding.py](advanced_ai_engineering/10_speculative_decoding.py) — **Speculative Decoding**: Draft model candidate token verification and generation speedup calculation.
 
 ---
 
