@@ -1,8 +1,9 @@
 # Core Coding and LLM Engineering Exercises
 
-This repository is split into two sections:
+This repository is split into three sections:
 1. **Core Coding**: Classic data structure and algorithm (DSA) questions commonly tested in technical screens.
 2. **LLM Coding**: Production-grade engineering challenges focused on working with large language models, streaming, tokenization, embeddings, vector databases, rate limits, concurrency, and validation.
+3. **AI Engineering**: End-to-end practical pipelines for key AI systems, including RAG pipelines, chatbots, agents, OCR extraction, and local code assistants.
 
 ---
 
@@ -33,6 +34,14 @@ Practical, self-contained AI-native backend challenges implemented in pure Pytho
 *   [09_exponential_backoff.py](llm_coding/09_exponential_backoff.py) — **Exponential Backoff Decorator**: Automatic retries with randomized jitter.
 *   [10_parallel_llm_calls.py](llm_coding/10_parallel_llm_calls.py) — **Concurrent LLM Batch Processor**: Thread pool execution with safety limits.
 *   [11_json_schema_validation.py](llm_coding/11_json_schema_validation.py) — **LLM JSON Schema Validator**: Validates structured output, auto-casts types.
+
+### 3. AI Engineering (`ai_engineering/`)
+Complete pipeline implementations for production AI services:
+*   [01_rag_pipeline.py](ai_engineering/01_rag_pipeline.py) — **Mini RAG Pipeline**: Chunking, Term-Frequency embeddings, cosine vector search, context retrieval, and dynamic prompt assembly.
+*   [02_ai_chatbot.py](ai_engineering/02_ai_chatbot.py) — **AI Chatbot**: Conversation memory storage, token streaming generator, auto-tool calling (time/math), and structured output formatting.
+*   [03_agent.py](ai_engineering/03_agent.py) — **Autonomous ReAct Agent**: Reasoning loop orchestrator utilizing thought-action-observation cycles and tool execution.
+*   [04_ocr_pipeline.py](ai_engineering/04_ocr_pipeline.py) — **Scanned Document Extraction**: OCR character error cleanup, regex parsing for dates/invoices/amounts, and validation cleanups.
+*   [05_coding_assistant.py](ai_engineering/05_coding_assistant.py) — **Local Codebase Assistant**: Repository file and function index mapping, code symbol keyword querying, and automated code block injection.
 
 ---
 
