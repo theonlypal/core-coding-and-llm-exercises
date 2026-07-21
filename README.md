@@ -22,6 +22,16 @@ Each file includes the problem description, target complexity, templates, and se
 *   [07_sliding_window.py](core_coding/07_sliding_window.py) — **Longest Substring Without Repeating Characters** (LeetCode 3)
 *   [08_dynamic_programming.py](core_coding/08_dynamic_programming.py) — **Coin Change** (LeetCode 322)
 *   [09_backtracking.py](core_coding/09_backtracking.py) — **Generate Parentheses** (LeetCode 22)
+*   [10_two_pointers.py](core_coding/10_two_pointers.py) — **Two Sum II - Input Array Is Sorted** (LeetCode 167)
+*   [11_intervals.py](core_coding/11_intervals.py) — **Merge Intervals** (LeetCode 56)
+*   [12_linked_list.py](core_coding/12_linked_list.py) — **Reverse Linked List** (LeetCode 206) & **Merge Two Sorted Lists** (LeetCode 21)
+*   [13_trie.py](core_coding/13_trie.py) — **Implement Trie (Prefix Tree)** (LeetCode 208)
+*   [14_matrix.py](core_coding/14_matrix.py) — **Spiral Matrix** (LeetCode 54)
+*   [15_bit_manipulation.py](core_coding/15_bit_manipulation.py) — **Single Number** (LeetCode 136) & **Counting Bits** (LeetCode 338)
+*   [16_monotonic_stack.py](core_coding/16_monotonic_stack.py) — **Daily Temperatures** (LeetCode 739)
+*   [17_greedy.py](core_coding/17_greedy.py) — **Jump Game** (LeetCode 55)
+*   [18_dijkstra.py](core_coding/18_dijkstra.py) — **Network Delay Time** (LeetCode 743)
+*   [19_union_find.py](core_coding/19_union_find.py) — **Redundant Connection** (LeetCode 684)
 
 ### 2. LLM Coding (`llm_coding/`)
 Practical, self-contained AI-native backend challenges implemented in pure Python:
